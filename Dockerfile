@@ -1,0 +1,11 @@
+FROM node:latest
+
+WORKDIR /moonsuit
+
+COPY . .
+
+RUN npm i 
+
+EXPOSE 3000
+
+CMD ["npm", "start"]
